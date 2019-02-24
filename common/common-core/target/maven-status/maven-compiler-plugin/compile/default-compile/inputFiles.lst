@@ -1,0 +1,10 @@
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\config\CoreConfiguration.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\enums\LogTypeEnum.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\generator\IdGenerator.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\mybatis\BaseEntity.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\support\BaseService.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\mybatis\MyMapper.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\generator\UniqueIdGenerator.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\interceptor\TokenInterceptor.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\config\PcObjectMapper.java
+F:\backup\mallcloud-srv-master\common\common-core\src\main\java\org\tc\core\support\IService.java

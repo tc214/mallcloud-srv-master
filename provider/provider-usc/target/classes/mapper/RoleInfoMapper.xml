@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.tc.provider.mapper.UserRoleMapper">
+
+    <!--<select id="countByUsername" resultType="java.lang.Integer">-->
+    <!--SELECT count(1) FROM User WHERE name = #{username}-->
+    <!--</select>-->
+
+    <select id="findByRoleName" resultType="org.tc.provider.model.domain.RoleInfo">
+        SELECT * FROM t_role WHERE role_name = #{roleName}
+    </select>
+
+    <select id="findByRoleCode" resultType="org.tc.provider.model.domain.RoleInfo">
+        SELECT * FROM t_role WHERE role_code = #{roleCode}
+    </select>
+
+    <select id="selectAllUserRoleName" resultType="java.lang.String">
+        SELECT role_name FROM t_role
+    </select>
+
+    <select id="selectAllRoleCode" resultType="java.lang.String">
+        SELECT role_code FROM t_role
+    </select>
+
+    <select id="selectUserRoleByUserId" resultType="org.tc.provider.model.domain.RoleInfo">
+        SELECT * FROM t_role
+    </select>
+
+
+</mapper>

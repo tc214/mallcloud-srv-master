@@ -1,0 +1,10 @@
+#security:
+#  oauth2:
+#    client:
+#      clientId: mallcloud-client-usc
+#      clientSecret: mallcloudClientSecret
+#      access-token-uri: http://localhost:31012/usc/oauth/token
+#      user-authorization-uri: http://localhost:31012/usc/oauth/authorize
+#    resource:
+#      id: mallcloud-resource-usc
+#

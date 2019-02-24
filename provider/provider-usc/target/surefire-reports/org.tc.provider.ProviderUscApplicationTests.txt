@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.tc.provider.ProviderUscApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.722 s - in org.tc.provider.ProviderUscApplicationTests

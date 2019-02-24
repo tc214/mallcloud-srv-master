@@ -1,0 +1,35 @@
+mallcloud:
+  auth:
+    rest-pwd-url: http://passport.tc.com/password/edit?resetPwdKey=
+    active-user-url: http://passport.tc.com/usc/auth/user/active/
+    refresh-token-url: http://localhost:31012/usc/oauth/token
+
+  oauth2:
+    jwtSigningKey: mallcloud
+
+  security:
+    code:
+      image:
+        expireIn: 180
+        url: /auth/register,/auth/submitResetPwdEmail,/auth/form
+    oauth2:
+      tokenStore: jwt
+      clients[0]:
+        clientId: mallcloud-client-usc
+        clientSecret: mallcloudClientSecret
+        accessTokenValidateSeconds: 7200
+        scope: "*"
+      clients[1]:
+        clientId: mallcloud-browser
+        clientSecret: mallcloudClientSecret
+        accessTokenValidateSeconds: 7200
+        scope: "*"
+      clients[2]:
+        clientId: mallcloud-client-gateway
+        clientSecret: mallcloudClientSecret
+        accessTokenValidateSeconds: 7200
+        scope: "*"
+
+  token:
+    interceptor:
+      enable: true

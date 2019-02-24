@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.tc.provider.mapper.UserRoleBindMapper">
+
+    <!--<select id="countByUsername" resultType="java.lang.Integer">-->
+    <!--SELECT count(1) FROM User WHERE name = #{username}-->
+    <!--</select>-->
+
+    <select id="selectByUserIdRoleCode" resultType="org.tc.provider.model.domain.UserRoleBind">
+        SELECT * FROM t_user_role WHERE user_id = #{arg0} and role_code = #{arg1}
+    </select>
+
+    <select id="selectByUserId" resultType="java.lang.String">
+        SELECT role_code FROM t_user_role WHERE user_id = #{userId}
+    </select>
+
+</mapper>
